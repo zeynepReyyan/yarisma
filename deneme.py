@@ -8,4 +8,9 @@ def dusmanOluşturucu (level,oyuncu):
             dusman[i] = [[random.randint(20, 39) * 30, random.randint(0, 19) * -30], 3]
     return dusman
 
-def yetenekolusturucu(level,oyuncu)
+def yetenekolusturucu(level,oyuncu):
+    yetenekler = ["can", "lazer", "bomba"]
+    if oyuncu ==1:
+        yetenek = [[random.randint(0, 19) * 30, random.randint(0, 19) * -30], random.choice(yetenekler)]
+    else:
+        yetenek = [[random.randint(20, 39) * 30, random.randint(0, 19) * -30], random.choice(yetenekler)]
